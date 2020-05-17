@@ -576,7 +576,6 @@ var CanvasTerminalHolder = BaseView.extend({
     this.$terminal.height(0.8 * $(window).height());
     this.$terminal.draggable({
       cursor: 'move',
-      handle: '.toolbar',
       containment: '#interfaceWrapper',
       scroll: false
     });

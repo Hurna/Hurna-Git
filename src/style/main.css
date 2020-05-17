@@ -245,8 +245,8 @@ div.canvasTerminalHolder {
 
 div.gitDemonstrationView > div.visHolder,
 .visBackgroundColor {
-  background: #5cbcfc;
-  background-color: #5cbcfc;
+  background: #242424;
+  background-color: #242424;
 }
 
 body.hgMode div.gitDemonstrationView > div.visHolder,
@@ -271,7 +271,7 @@ div.canvasTerminalHolder > div.terminal-window-holder div.terminal-text {
   padding: 5px 10px;
 }
 
-div.canvasTerminalHolder > div.terminal-window-holder div.toolbar,
+div.canvasTerminalHolder > div.terminal-window-holder,
 div.canvasTerminalHolder > div.terminal-window-holder div.terminal-text,
 div.canvasTerminalHolder > div.terminal-window-holder div.inside {
   border: 0px;
@@ -294,143 +294,14 @@ div.canvasTerminalHolder > div.terminal-window-holder div.inside {
 
 #controls {
   max-width: 400px;
+  background-color: ##3f3f3f;
+  padding: 10px;
 }
 
 div.canvasTerminalHolder > div.terminal-window-holder {
   max-width: 500px;
   min-width: 500px;
   overflow: visible !important;
-}
-
-/* Toolbar */
-div.toolbar {
-  /* borrowed from try.github.com along with a bunch of other things */
-  background-image: -webkit-linear-gradient(top, #EFEDEE, #C1C1C1);
-  background-image: -moz-linear-gradient(top, #EFEDEE, #C1C1C1);
-  background-image: -o-linear-gradient(top, #EFEDEE, #C1C1C1);
-  background-image: -ms-linear-gradient(top, #EFEDEE, #C1C1C1);
-  background-image: linear-gradient(top, #EFEDEE, #C1C1C1);
-
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border: 1px solid #6287A4;
-  border-bottom: 0;
-  height: 30px;
-  position: relative;
-  text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875em;
-  color: #333;
-}
-
-div.toolbar.level-toolbar {
-  background-image: -webkit-linear-gradient(top, #B2FF2E, #8AD247);
-  background-image: -moz-linear-gradient(top, #B2FF2E, #8AD247);
-  background-image: -o-linear-gradient(top, #B2FF2E, #8AD247);
-  background-image: -ms-linear-gradient(top, #B2FF2E, #8AD247);
-  background-image: linear-gradient(top, #B2FF2E, #8AD247);
-  border-radius: 0;
-  height: inherit;
-  font-size: 0.75em;
-  position: relative;
-}
-
-div.toolbar.level-toolbar button {
-  font-size: 0.75em;
-  border: 1px solid #888;
-  border-radius: 4px;
-  padding: 4px 8px;
-  background-image: -webkit-linear-gradient(top, #EFEDEE, #C1C1C1);
-}
-
-div.toolbar div.clearfix {
-  zoom: 1;
-  margin: 10px 0;
-}
-
-div.toolbar div.clearfix:after {
-  clear: both;
-  content: ".";
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-
-div.toolbar div.showGoalWrapper {
-  float: left;
-  margin-left: 6px;
-}
-
-div.toolbar div.showObjectiveWrapper {
-  float: right;
-  margin-right: 6px;
-}
-
-div.toolbar div.buttonsWrapper {
-  position: absolute;
-  width: 100%;
-  top: 10px;
-}
-
-div.toolbar div.levelNameWrapper {
-  text-align: center;
-  position: relative;
-  top: 5px;
-  margin: 0 100px;
-  padding-bottom: 10px;
-}
-
-span.levelToolbarSpan {
-  font-weight: 800;
-  font-style: italic;
-}
-
-div.toolbar.level-toolbar.hidden {
-  opacity: 0;
-  height: 0px;
-}
-
-div.toolbar > div.controls {
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  width: 57px;
-  height: 13px;
-}
-
-div.toolbar > div.controls div i {
-  text-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.5);
-}
-
-div.toolbar > div.controls div.box.flex1 {
-  text-align: center;
-}
-
-div.toolbar > div.controls div.box.flex1 div {
-  border-radius: 100%;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 1px 0 0 1px;
-  position: relative;
-  text-indent: -9999px;
-  cursor: default;
-
-  -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, .8), inset 0 0 3px 1px rgba(0, 0, 0, .6), 0 -1px 1px 1px rgba(0, 0, 0, .4);
-  box-shadow: 0 2px 0 rgba(255, 255, 255, .8), inset 0 0 3px 1px rgba(0, 0, 0, .6), 0 -1px 1px 1px rgba(0, 0, 0, .4);
-
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
-  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
-  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
-}
-
-div.toolbar > div.controls div.box.flex1 div:hover {
-
 }
 
 div.controls div.box.flex1 div.close {
@@ -509,32 +380,22 @@ p.commandLine.finished span.icons i.icon-check {
 }
 
 p.commandLine.warning span.icons {
-  background: #E0FF00;
-  background-color: #E0FF00;
   color: #333;
 }
 
 p.commandLine.inqueue span.icons {
-  background: #EBEB24;
-  background-color: #EBEB24;
   color: #333;
 }
 
 p.commandLine.processing span.icons {
-  background: #88E748;
-  background-color: #88E748;
   color: #333;
 }
 
 p.commandLine.finished span.icons {
-  background: #0066cc;
-  background-color: #0066cc;
   color: white;
 }
 
 p.commandLine.error span.icons {
-  background: red;
-  background-color: red;
 }
 
 p.commandResult {
@@ -564,8 +425,10 @@ p.commandLine span.prompt {
 
 #commandLineHistory {
   height: 100%;
-  margin: 10px;
-  border-radius: 5px;
+  border: 2px solid grey;
+  background-color: #bbb;
+  padding-top: 30px;
+  padding-bottom: 30px;
   box-shadow: 1px 0px 15px rgba(100, 100, 100, 1);
   overflow: auto;
 }
@@ -618,8 +481,9 @@ li.rebaseEntry,
 }
 
 #terminal {
-  border-bottom: 0;
+  border: 0;
   padding: 0 5px;
+  padding-top: 20px;
 }
 
 .helperBar {

@@ -27,26 +27,6 @@
   <script type="text/html" id="terminal-window-bare-template">
     <div class="terminal-window-holder box flex10 vertical transitionTransform slideOut">
       <div class="wrapper box vertical">
-        <div class="toolbar box vertical center">
-          <div class="controls box horizontal justify">
-            <div class="box flex1">
-              <div class="close">
-              </div>
-            </div>
-            <div class="box flex1">
-              <div class="minimize">
-              </div>
-            </div>
-            <div class="box flex1">
-              <div class="plus">
-              </div>
-            </div>
-          </div>
-          <div>
-            <i class="icon-cog"></i>
-            <%= title %>
-          </div>
-        </div>
         <div class="terminal-text">
           <p class="helperText">
             <%= text %>
@@ -60,35 +40,10 @@
 
   <script type="text/html" id="terminal-window-template">
     <div class="terminal-window box horizontal flex3 transitionAll">
-    <div class="box flex3">
+    <div class="box flex1">
     </div>
     <div class="terminal-window-holder box flex10 vertical transitionTransform">
       <div class="wrapper box vertical">
-        <div class="toolbar box vertical center">
-          <div class="controls box horizontal justify">
-            <div class="box flex1">
-              <div class="close">
-              </div>
-            </div>
-            <div class="box flex1">
-              <div class="minimize">
-              </div>
-            </div>
-            <div class="box flex1">
-              <div class="plus">
-              </div>
-            </div>
-          </div>
-          <% if (title) { %>
-            <div>
-              <i class="icon-cog"></i>
-              <span class="modal-title">
-                <%= title %>
-              </span>
-            </div>
-          <% } %>
-        </div>
-
         <div class="inside">
         </div>
       </div>
@@ -370,32 +325,20 @@
 
   <!-- The entire interface is within this div -->
   <div id="interfaceWrapper" class="box horizontal flex1">
+
+    <div id="mainVisSpace" class="box flex2 horizontal transitionAll visBackgroundColor">
+      <span class="modeText transitionOpacity gitMode">
+        Git
+      </span>
+      <span class="modeText transitionOpacity hgMode">
+        Hg
+      </span>
+    </div>
+
     <div id="controls" class="box vertical flex1 visBackgroundColor">
       <div id="commandLineHistory" class="box vertical flex3">
-          <div class="toolbar box vertical center">
-            <div class="controls box horizontal justify">
-              <div class="box flex1">
-                <div class="close">
-                </div>
-              </div>
-              <div class="box flex1">
-                <div class="minimize">
-                </div>
-              </div>
-              <div class="box flex1">
-                <div class="plus">
-                </div>
-              </div>
-            </div>
-            <div>
-              <i class="icon-home"></i>
-              <span class="vcs-mode-aware intl-aware" data-intl="learn-git-branching">
-                Learn Git Branching
-              </span>
-            </div>
-          </div>
-          <div id="levelToolbarMount">
-          </div>
+        <div id="levelToolbarMount">
+        </div>
 
         <div id="terminal" class="box flex1 horizontal startAlign">
           <div id="commandDisplay" class="box vertical flex1">
@@ -419,15 +362,6 @@
       </div>
     </div>
 
-    <div id="mainVisSpace" class="box flex2 horizontal transitionAll visBackgroundColor">
-      <span class="modeText transitionOpacity gitMode">
-        Git
-      </span>
-      <span class="modeText transitionOpacity hgMode">
-        Hg
-      </span>
-    </div>
-
     <!-- If you drag the goal window to the right side of the screen, this gets shown and causes
          the main visualization to squeeze a bit. This way, you could have the goal window hang out
          on the right side of the screen and still see the repo visualization. -->
@@ -444,22 +378,9 @@
   <div id="helperBarMount">
   </div>
 
-  <!-- lol inline styles -->
-  <a class="githubLink" href="https://github.com/pcottle/learnGitBranching" target="_blank">
-    <img width="149" height="149"
-      style="position: absolute; top: 0; right: 0; border: 0;"
-      src="assets/forkme_right_darkblue_121621.png"
-      alt="Fork me on GitHub"
-    />
-  </a>
-
-
-  <!-- The advantage of github pages: super-easy, simple, slick static hostic.
-       The downside? No raw logs to parse for analytics, so I have to include
-       Google analytics :-/ -->
   <script type="text/javascript">
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37500646-1']);
+    _gaq.push(['_setAccount', 'UA-113617528-1']);
     _gaq.push(['_trackPageview']);
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
