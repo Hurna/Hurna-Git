@@ -48,29 +48,9 @@ class LevelToolbarView extends React.Component {
         <div className="clearfix">
           <div className="levelNameWrapper">
             <i className="icon-bolt"></i>
-            {' Level '}
             <span className="levelToolbarSpan">
               {this.props.name}
             </span>
-          </div>
-        </div>
-        <div className="buttonsWrapper">
-          <div className="showGoalWrapper">
-            <button
-              onClick={this.props.onGoalClick}
-              type="button">
-              {this.state.isGoalExpanded ?
-                intl.str('hide-goal-button') :
-                intl.str('show-goal-button')
-              }
-            </button>
-          </div>
-          <div className="showObjectiveWrapper">
-            <button
-              onClick={this.props.onObjectiveClick}
-              type="button">
-              {intl.str('objective-button')}
-            </button>
           </div>
         </div>
       </div>
@@ -81,8 +61,6 @@ class LevelToolbarView extends React.Component {
 
 LevelToolbarView.propTypes = {
   name: PropTypes.string.isRequired,
-  onGoalClick: PropTypes.func.isRequired,
-  onObjectiveClick: PropTypes.func.isRequired,
   parent: PropTypes.object.isRequired
 }
 

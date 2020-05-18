@@ -293,11 +293,11 @@ var initDemo = function(sandbox) {
 
 function tryLocaleDetect() {
   // use navigator to get the locale setting
-  changeLocaleFromHeaders(navigator.language || navigator.browserLanguage);
+  // changeLocaleFromHeaders(navigator.language || navigator.browserLanguage);
 }
 
 function changeLocaleFromHeaders(langString) {
-  LocaleActions.changeLocaleFromHeader(langString);
+  // LocaleActions.changeLocaleFromHeader(langString);
 }
 
 if (require('../util').isBrowser()) {
@@ -327,10 +327,10 @@ function CommandUI() {
     el: $('#commandLineBar')
   });
 
-  ReactDOM.render(
-    React.createElement(MainHelperBarView),
-    document.getElementById('helperBarMount')
-  );
+  //ReactDOM.render(
+  //  React.createElement(MainHelperBarView),
+  //  document.getElementById('helperBarMount')
+  //);
   ReactDOM.render(
     React.createElement(
       CommandHistoryView,
