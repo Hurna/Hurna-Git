@@ -442,7 +442,7 @@ var ConfirmCancelTerminal = Backbone.View.extend({
   }
 });
 
-var NextLevelConfirm = ConfirmCancelTerminal.extend({
+var NextLevelConfirm = ModalAlert.extend({
   initialize: function(options) {
     options = options || {};
     var nextLevelName = (options.nextLevel) ?
@@ -466,7 +466,7 @@ var NextLevelConfirm = ConfirmCancelTerminal.extend({
     markdown = markdown + '\n\n';
     var extraHTML;
     if (options.nextLevel) {
-      markdown = markdown + intl.str('finish-dialog-next', {nextLevel: nextLevelName});
+      markdown = markdown + intl.str('finish-dialog-next', {nextLevel: nextLevelName, nextLevelId: options.nextLevelId});
     } else {
       extraHTML = '<p class="catchadream">' + intl.str('finish-dialog-finished') +
         ' (ﾉ^_^)ﾉ (ﾉ^_^)ﾉ (ﾉ^_^)ﾉ' +
@@ -482,8 +482,22 @@ var NextLevelConfirm = ConfirmCancelTerminal.extend({
       }
     );
 
+    // also setup keyboard
+    this.navEvents = Object.assign({}, Backbone.Events);
+    this.navEvents.on('negative', this.negative, this);
+    this.keyboardListener = new KeyboardListener({
+      events: this.navEvents,
+      aliasMap: {
+        esc: 'negative'
+      }
+    });
+
     NextLevelConfirm.__super__.initialize.apply(this, [options]);
-  }
+  },
+
+  negative: function() {
+    this.hide();
+  },
 });
 
 var ViewportAlert = Backbone.View.extend({
@@ -573,10 +587,9 @@ var CanvasTerminalHolder = BaseView.extend({
     this.inDom = true;
 
     this.$terminal = this.$el.find('.terminal-window-holder').first();
-    this.$terminal.height(0.8 * $(window).height());
+    this.$terminal.height($(window).height()); //0.8 * $(window).height());
     this.$terminal.draggable({
       cursor: 'move',
-      handle: '.toolbar',
       containment: '#interfaceWrapper',
       scroll: false
     });

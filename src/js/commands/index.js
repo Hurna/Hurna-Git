@@ -2,14 +2,14 @@ var intl = require('../intl');
 
 var Errors = require('../util/errors');
 var GitCommands = require('../git/commands');
-var MercurialCommands = require('../mercurial/commands');
+//var MercurialCommands = require('../mercurial/commands');
 
 var CommandProcessError = Errors.CommandProcessError;
 var CommandResult = Errors.CommandResult;
 
 var commandConfigs = {
-  'git': GitCommands.commandConfig,
-  'hg': MercurialCommands.commandConfig
+  'git': GitCommands.commandConfig
+  //'hg': MercurialCommands.commandConfig
 };
 
 var commands = {

@@ -169,7 +169,7 @@ var Level = Sandbox.extend({
     if (!this.testOption('noStartCommand') && method !== 'importLevelNow') {
       Main.getEventBaton().trigger(
         'commandSubmitted',
-        'hint; delay 2000; show goal'
+        'hint; delay 1000; show goal;'
       );
     }
   },
@@ -516,6 +516,7 @@ var Level = Sandbox.extend({
         // while giving them their results...
         var nextDialog = new NextLevelConfirm({
           nextLevel: nextLevel,
+          nextLevelId: nextLevel.id,
           numCommands: numCommands,
           best: best
         });
@@ -530,7 +531,7 @@ var Level = Sandbox.extend({
         log.choseNextLevel(nextLevel.id);
         Main.getEventBaton().trigger(
           'commandSubmitted',
-          'level ' + nextLevel.id
+          'level ' + nextLevel.id + " --noIntroDialog"
         );
       }
     })
