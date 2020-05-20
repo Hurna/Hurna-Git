@@ -22,7 +22,7 @@ exports.strings = {
   ///////////////////////////////////////////////////////////////////////////
   'finish-dialog-next': {
     '__desc__': 'One of the lines in the next level dialog',
-    'en_US': 'Would you like to move on to *"{nextLevel}"*, the next level?',
+    'en_US': '*"{nextLevel}"* : read the [next level description]({nextLevelId}_desc.html) {nextLevelId} or move [straight to the next level]({nextLevelId}.html). Press "esc" to close this dialog',
     'de_DE': 'Möchtest du mit *"{nextLevel}"* weitermachen, dem nächsten Level?',
     'ja': '次の章 *"{nextLevel}"* へ進みますか？',
     'zh_CN': '要不要试试下一关 *“{nextLevel}”*？',
@@ -31,7 +31,7 @@ exports.strings = {
     'es_ES': '¿Quieres pasar al nivel *"{nextLevel}"*, el próximo nivel?',
     'pt_BR': 'Você gostaria de ir para o próximo nível: *"{nextLevel}"*?',
     'gl'   : '¿Gustaríache ir o seguinte nivel: *"{nextLevel}"*?',
-    'fr_FR': 'Voulez-vous passer à *"{nextLevel}"*, le prochain niveau ?',
+    'fr_FR': '*"{nextLevel}"* : lire [la description du prochain niveau]({nextLevelId}_desc.html) {nextLevelId} ou y [aller directement]({nextLevelId}.html). Appuyer sur "esc" pour fermer ce dialog',
     'ru_RU': 'Хотите перейти на следующий уровень: *"{nextLevel}"*?',
     'uk': 'Хочеш перейти на наступний рівень -- *"{nextLevel}"*?',
     'ko': '다음 레벨로 넘어갈까요? 레벨 *"{nextLevel}"*',
@@ -1512,7 +1512,7 @@ exports.strings = {
   ///////////////////////////////////////////////////////////////////////////
   'hide-goal': {
     '__desc__': 'the helper message for the window that shows the goal tree',
-    'en_US': 'You can hide this window with "hide goal"',
+    'en_US': 'You can hide this window by clicking on it or with  the command "hide goal". <br /> The command "show goal" gives it you back.',
     'de_DE': 'Du kannst diese Meldung mit "hide goal" ausblenden',
     'zh_CN': '你可以通过 "hide goal" 命令关闭这个窗口',
     'zh_TW': '你可以透過 "hide goal" 關閉這個視窗',
@@ -1520,7 +1520,7 @@ exports.strings = {
     'es_ES': 'Puedes ocultar esta ventana con "hide goal."',
     'pt_BR': 'Você pode ocultar esta janela com "hide goal"',
     'gl'   : 'Podes ocultar esta ventá con "hide goal"',
-    'fr_FR': 'Vous pouvez masquer cette fenêtre avec "Cacher les cibles"',
+    'fr_FR': 'Cliquer sur cette fenêtre ou taper "hide goal" pour la fermer. <br /> Taper "show goal" pour la retrouver.',
     'ja'   : 'このウィンドウは"hide goal"と打つかクリックで閉じれます',
     'ru_RU': 'Можно скрыть это окно при помощи "hide goal"',
     'uk': 'Можна сховати це вікно за допомогою "hide goal"',

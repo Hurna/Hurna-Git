@@ -7,10 +7,10 @@
   <title>Learn Git Branching</title>
   <meta name="author" content="Peter Cottle">
 
-  <meta property="og:title" content="Learn Git Branching"/>
+  <meta property="og:title" content="Git Visualizer - Learn Git Branching"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://pcottle.github.io/learnGitBranching/index.html?demo"/>
-  <meta property="og:image" content="https://pcottle.github.io/learnGitBranching/assets/learnGitBranching.png"/>
+  <meta property="og:url" content="https://hurna.io/academy/git/explorers/explore.html"/>
+  <meta property="og:image" content="https://hurna.io/assets/images/git.png"/>
   <meta property="og:description" content="An interactive Git visualization tool to educate and challenge!"/>
   <meta http-equiv="content-language" content="en">
 
@@ -82,6 +82,7 @@
     </p>
     <div class="iconHolder box horizontal">
       <% for (var i = 0; i < ids.length; i++) { %>
+        <a href="<%=ids[i]%>.html" style="display:block;">
         <div class="levelIcon box center centerAlign vertical" id="levelIcon-<%=ids[i]%>" data-id="<%=ids[i]%>">
           <div class="index box" data-id="<%=ids[i]%>">
             <i class="icon-ok-circle" data-id="<%=ids[i]%>"></i>
@@ -90,6 +91,7 @@
             </div>
           </div>
         </div>
+        </a>
       <% } %>
     </div>
   </script>

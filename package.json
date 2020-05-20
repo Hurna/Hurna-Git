@@ -1,8 +1,8 @@
 {
-  "name": "LearnGitBranching",
+  "name": "HurnaGitLearning",
   "version": "0.8.0",
   "description": "An interactive git visualization to challenge and educate!",
-  "homepage": "https://learngitbranching.js.org",
+  "homepage": "hurna.io/academy/git/explorers/index.html",
   "author": "Peter Cottle <petermcottle@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pcottle/learnGitBranching"
+    "url": "https://github.com/Hurna/Hurna-Git"
   },
   "devDependencies": {
     "@babel/core": "^7.4.8",

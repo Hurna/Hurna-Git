@@ -10,10 +10,10 @@ You can input a variety of commands into LearnGitBranching (LGB) -- as commands 
 ![demo-gif](https://user-images.githubusercontent.com/7308241/39848730-040bd09e-53df-11e8-964e-2d48f35a4355.gif)
 
 This visualization combined with tutorials and "levels" can help both beginners and intermediate developers polish their version control skills. A quick demo is available here:
-https://pcottle.github.com/learnGitBranching/?demo
+https://hurna.io/academy/git/explorers/explorer.html?demo
 
 Or, you can launch the application normally here:
-https://pcottle.github.com/learnGitBranching/
+https://hurna.io/academy/git/explorers/explorer.html
 
 ### Sandbox Mode
 
@@ -33,7 +33,7 @@ For some added fun, there is a "git golf" concept where we keep track of how man
 
 ### Sharing permalinks
 
-You can share a link to LearnGitBranching with an arbitrary set of commands that will execute upon load by using the `command` URL parameter. You will also likely want to disable the intro dialog for this case with the `NODEMO` url param; here is [an example](https://learngitbranching.js.org/?NODEMO&command=echo%20%22hello%22;%20git%20commit) to get started.
+You can share a link to LearnGitBranching with an arbitrary set of commands that will execute upon load by using the `command` URL parameter. You will also likely want to disable the intro dialog for this case with the `NODEMO` url param; here is [an example](https://hurna.io/academy/git/explorers/explorer.html?NODEMO&command=echo%20%22hello%22;%20git%20commit) to get started.
 
 ### Level Builder
 

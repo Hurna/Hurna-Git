@@ -105,10 +105,10 @@ var insertAlternateLinks = function(pageId) {
   // and optionally a region (in ISO 3166-1 Alpha 2 format) of an alternate URL
 
   var altLinks = LocaleStore.getSupportedLocales().map(function(langCode) {
-    var url = "https://learngitbranching.js.org/?locale=" + langCode;
+    var url = "https://hurna.io/academy/git/explorers/explorer.html/?locale=" + langCode;
     return '<link rel="alternate" hreflang="'+langCode+'" href="' + url +'" />';
   });
-  var defaultUrl = "https://learngitbranching.js.org/?locale=" + LocaleStore.getDefaultLocale();
+  var defaultUrl = "https://hurna.io/academy/git/explorers/explorer.html/?locale=" + LocaleStore.getDefaultLocale();
   altLinks.push('<link rel="alternate" hreflang="x-default" href="' + defaultUrl +'" />');
   $('head').prepend(altLinks);
 
@@ -185,7 +185,11 @@ var initDemo = function(sandbox) {
     });
   }
 
-  if (params.hasOwnProperty('demo')) {
+  if (params.level_id) {
+    commands = [
+      "level " + params.level_id + " --noIntroDialog;"
+    ];
+  } else if (params.hasOwnProperty('demo')) {
     commands = [
       "git commit; git checkout -b bugFix C1; git commit; git merge master; git checkout master; git commit; git rebase bugFix;",
       "delay 1000; reset;",
@@ -195,7 +199,7 @@ var initDemo = function(sandbox) {
       "git checkout another; git rebase side; git rebase another master;",
       "help; levels"
     ];
-  } else if (params.hasOwnProperty('hgdemo')) {
+  } /*else if (params.hasOwnProperty('hgdemo')) {
     commands = [
       'importTreeNow {"branches":{"master":{"target":"C3","id":"master"},"feature":{"target":"C2","id":"feature"},"debug":{"target":"C4","id":"debug"}},"commits":{"C0":{"parents":[],"id":"C0","rootCommit":true},"C1":{"parents":["C0"],"id":"C1"},"C2":{"parents":["C1"],"id":"C2"},"C3":{"parents":["C1"],"id":"C3"},"C4":{"parents":["C2"],"id":"C4"}},"HEAD":{"target":"feature","id":"HEAD"}}',
       'delay 1000',
@@ -219,7 +223,7 @@ var initDemo = function(sandbox) {
       'hg rebase -d master'
     ];
     commands = commands.join(';#').split('#'); // hax
-  } else if (params.hasOwnProperty('remoteDemo')) {
+  } */else if (params.hasOwnProperty('remoteDemo')) {
     commands = [
       'git clone',
       'git commit',
@@ -293,11 +297,11 @@ var initDemo = function(sandbox) {
 
 function tryLocaleDetect() {
   // use navigator to get the locale setting
-  // changeLocaleFromHeaders(navigator.language || navigator.browserLanguage);
+  changeLocaleFromHeaders(navigator.language || navigator.browserLanguage);
 }
 
 function changeLocaleFromHeaders(langString) {
-  // LocaleActions.changeLocaleFromHeader(langString);
+  LocaleActions.changeLocaleFromHeader(langString);
 }
 
 if (require('../util').isBrowser()) {

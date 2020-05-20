@@ -6,7 +6,7 @@ exports.levelSequences = {
     require('./intro/branching').level,
     require('./intro/merging').level,
     require('./intro/rebasing').level
-  ],
+  ]/*,
   rampup: [
     require('./rampup/detachedHead').level,
     require('./rampup/relativeRefs').level,
@@ -48,7 +48,7 @@ exports.levelSequences = {
     require('./remote/fetchArgs').level,
     require('./remote/sourceNothing').level,
     require('./remote/pullArgs').level
-  ]
+  ]*/
 };
 
 // there are also cute names and such for sequences

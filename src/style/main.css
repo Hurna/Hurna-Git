@@ -731,6 +731,7 @@ div.levelDropdownTabWrapper {
   margin-right: -10px;
   border-bottom: 2px solid #ccc;
   margin-bottom: 10px;
+  display: none;
 }
 
 div.levelDropdownTab {
@@ -996,24 +997,24 @@ div.gitDemonstrationView {
   -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.leftRightView div.exit,
-.leftRightView div.left {
+.leftRightView div.exit {
   color: rgb(253, 50, 50);
   text-shadow: -1px 1px 3px rgba(0,0,0,0.7);
 }
 
+.leftRightView div.exit:hover {
+  color: #FF6969;
+}
+
+.leftRightView div.left,
 .leftRightView div.right {
-  color: rgb(82, 255, 82);
+  color: green;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
+.leftRightView div.left:hover,
 .leftRightView div.right:hover {
-  color: #74FC74;
-}
-
-.leftRightView div.exit:hover,
-.leftRightView div.left:hover {
-  color: #FF6969;
+  color: lightgreen;
 }
 
 /* button stuff from liquidGraph */
