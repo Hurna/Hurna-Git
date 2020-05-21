@@ -14,8 +14,8 @@
   <meta property="og:description" content="An interactive Git visualization tool to educate and challenge!"/>
   <meta http-equiv="content-language" content="en">
 
-  <link rel="stylesheet" href="build/{{styleFile}}" type="text/css" charset="utf-8">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/git/build/{{styleFile}}" type="text/css" charset="utf-8">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
   <!-- Templates from here on out... -->
@@ -312,11 +312,12 @@
 
   <!-- The compiled and minified build file (that actually does everything) is below.
        For a much easier time perusing the source, see the individual files at:
-          https://github.com/pcottle/learnGitBranching
+          https://github.com/Hurna/Hurna-Git
   -->
-  <script defer src="build/{{jsFile}}"></script>
+  <script defer src="/assets/git/build/{{jsFile}}"></script>
 </head>
 <body>
+<base target="_parent">
   <!-- lol noscript. I did not write 9k+ lines of JS just for you to bounce off my website -->
   <noscript>
     <div style="z-index:1000000;background:red;color:white;position:absolute;top:0;left:0;height:300px;width:300px;">

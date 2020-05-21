@@ -18,7 +18,7 @@ exports.dialog = {
         '',
         'PS: Want to go straight to a sandbox next time?',
         'Try out ',
-        '[this link](https://hurna.io/academy/git/explorers/explorer.html?NODEMO)'
+        '[this link](https://hurna.io/academy/git/explorers/explore.html)'
       ]
     }
   }],
@@ -501,11 +501,11 @@ exports.dialog = {
         '',
         'Si vous n\'avez pas vu la démo, vous pouvez le faire là :',
         '',
-        '[Demo](https://hurna.io/fr/academy/git/explorers/explorer.html?locale=fr_FR&demo)',
+        '[Demo](https://hurna.io/fr/academy/git/explorers/challenges.html)',
         '',
-        'Ajoutez `?NODEMO` à l\'URL pour ne plus voir de dialog à l\'ouverture :',
+        'Pour ne plus voir de dialog à l\'ouverture :',
         '',
-        '[https://hurna.io/fr/academy/git/explorers/explorer.html?NODEMO](https://hurna.io/fr/academy/git/explorers/explorer.html?locale=fr_FR&NODEMO)'
+        '[https://hurna.io/fr/academy/git/explorers/explore.html](https://hurna.io/fr/academy/git/explorers/explore.html)'
       ]
     }
   }, {

@@ -5,15 +5,15 @@
 
 LearnGitBranching is a git repository visualizer, sandbox, and a series of educational tutorials and challenges. Its primary purpose is to help developers understand git through the power of visualization (something that's absent when working on the command line). This is achieved through a game with different levels to get acquainted with the different git commands.
 
-You can input a variety of commands into LearnGitBranching (LGB) -- as commands are processed, the nearby commit tree will dynamically update to reflect the effects of each command:
+You can input a variety of commands into LearnGitBranching (LGB) -- as commands are processed, the nearby commit tree will dynamically update to reflect the effects of each command.
 
-![demo-gif](https://user-images.githubusercontent.com/7308241/39848730-040bd09e-53df-11e8-964e-2d48f35a4355.gif)
+This visualization combined with tutorials and "levels" can help both beginners and intermediate developers polish their version control skills.
 
-This visualization combined with tutorials and "levels" can help both beginners and intermediate developers polish their version control skills. A quick demo is available here:
-https://hurna.io/academy/git/explorers/explorer.html?demo
+You can access to all the challenges information here:
+https://hurna.io/academy/git/explorers/challenges.html
 
-Or, you can launch the application normally here:
-https://hurna.io/academy/git/explorers/explorer.html
+Or, you can launch the application here:
+https://hurna.io/academy/git/explorers/play_challenges.html
 
 ### Sandbox Mode
 
@@ -31,14 +31,9 @@ Type `levels` to see the available lessons / challenges (and which ones you have
 
 For some added fun, there is a "git golf" concept where we keep track of how many commands you use to solve each level. See if you can match all of our records!
 
-### Sharing permalinks
-
-You can share a link to LearnGitBranching with an arbitrary set of commands that will execute upon load by using the `command` URL parameter. You will also likely want to disable the intro dialog for this case with the `NODEMO` url param; here is [an example](https://hurna.io/academy/git/explorers/explorer.html?NODEMO&command=echo%20%22hello%22;%20git%20commit) to get started.
-
 ### Level Builder
 
-You can build levels with `build level`. The dialog will walk you through the process, and at the end you can `export level` to get a JSON blob. Paste that in a gist or directly into an issue and I can check it out / merge in your changes! You can also share this level directly with friends by having them run "import level" or simply specify a gist ID in the url params like so:
-https://pcottle.github.io/learnGitBranching/?gist_level_id=a84407351f9c9f0cb241
+You can build levels with `build level`. The dialog will walk you through the process, and at the end you can `export level` to get a JSON blob. Paste that in a gist or directly into an issue and I can check it out / merge in your changes! You can also share this level directly with friends by having them run "import level".
 
 ## Reporting Bugs / Opening Issues
 
