@@ -109,24 +109,24 @@ var instantCommands = [
 ];
 
 var regexMap = {
-  'reset solved': /^reset solved($|\s)/,
+  //'reset solved': /^reset solved($|\s)/,
   'help': /^help( +general)?$|^\?$/,
   'reset': /^reset( +--forSolution)?$/,
   'delay': /^delay (\d+)$/,
   'clear': /^clear($|\s)/,
-  'exit level': /^exit level($|\s)/,
-  'sandbox': /^sandbox($|\s)/,
+  //'exit level': /^exit level($|\s)/,
+  //'sandbox': /^sandbox($|\s)/,
   'level': /^level\s?([a-zA-Z0-9]*)/,
   'levels': /^levels($|\s)/,
   'mobileAlert': /^mobile alert($|\s)/,
-  'build level': /^build +level\s?([a-zA-Z0-9]*)$/,
+  //'build level': /^build +level\s?([a-zA-Z0-9]*)$/,
   'export tree': /^export +tree$/,
   'importTreeNow': /^importTreeNow($|\s)/,
   'importLevelNow': /^importLevelNow($|\s)/,
-  'import tree': /^import +tree$/,
-  'import level': /^import +level$/,
-  'undo': /^undo($|\s)/,
-  'share permalink': /^share( +permalink)?$/
+  //'import tree': /^import +tree$/,
+  //'import level': /^import +level$/,
+  'undo': /^undo($|\s)/
+  //'share permalink': /^share( +permalink)?$/
 };
 
 var getAllCommands = function() {

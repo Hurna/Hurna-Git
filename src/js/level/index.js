@@ -27,11 +27,11 @@ var LevelToolbarView = require('../react_views/LevelToolbarView.jsx');
 var TreeCompare = require('../graph/treeCompare');
 
 var regexMap = {
-  'help level': /^help level$/,
-  'start dialog': /^start dialog$/,
+  //'help level': /^help level$/,
+  //'start dialog': /^start dialog$/,
   'show goal': /^(show goal|goal|help goal)$/,
   'hide goal': /^hide goal$/,
-  'show solution': /^show solution($|\s)/,
+  //'show solution': /^show solution($|\s)/,
   'objective': /^(objective|assignment)$/
 };
 
@@ -640,9 +640,9 @@ var Level = Sandbox.extend({
     var methodMap = {
       'show goal': this.showGoal,
       'hide goal': this.hideGoal,
-      'show solution': this.showSolution,
-      'start dialog': this.startDialog,
-      'help level': this.startDialog,
+      //'show solution': this.showSolution,
+      //'start dialog': this.startDialog,
+      //'help level': this.startDialog,
       'objective': this.objectiveDialog
     };
     var method = methodMap[command.get('method')];

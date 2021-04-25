@@ -4,9 +4,9 @@ exports.levelSequences = {
   intro: [
     require('./intro/commits').level,
     require('./intro/branching').level,
-    require('./intro/merging').level,
-    require('./intro/rebasing').level
-  ],/*
+    require('./intro/rebasing').level,
+    require('./intro/merging').level
+  ],
   rampup: [
     require('./rampup/detachedHead').level,
     require('./rampup/relativeRefs').level,
@@ -23,12 +23,12 @@ exports.levelSequences = {
     require('./mixed/jugglingCommits2').level,
     require('./mixed/tags').level,
     require('./mixed/describe').level
-  ],*/
+  ],
   advanced: [
-    require('./rebase/manyRebases').level//,
-    //require('./advanced/multipleParents').level,
-    //require('./rebase/selectiveRebase').level
-  ],/*
+    require('./rebase/manyRebases').level,
+    require('./advanced/multipleParents').level,
+    require('./rebase/selectiveRebase').level
+  ]/*,
   remote: [
     require('./remote/clone').level,
     require('./remote/remoteBranches').level,
